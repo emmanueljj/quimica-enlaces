@@ -1,0 +1,11 @@
+%chk=C:\Users\emman\Escritorio\quimica-enlaces\molecula\bn.chk
+#p b3lyp/3-21g
+
+Title Card Required - Distancia +1.40A - Paso 7
+
+0 2
+ Li     4.64474019     1.33044279     0.00000000
+ H      3.11474019     1.33044279     0.00000000
+ Be     5.46193510    -0.91857046     0.00000000
+ H      4.27193510    -0.91857046     0.00000000
+

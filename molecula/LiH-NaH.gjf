@@ -1,0 +1,16 @@
+%chk=C:\Users\emman\Escritorio\quimica-enlaces\molecula\doble prueba 2.chk
+# hf/3-21g geom=connectivity
+
+Title Card Required
+
+0 1
+ Li                -5.32396577   -4.72642881    0.94560524
+ H                 -6.85396577   -4.72642881    0.94560524
+ Na                -5.52526678   -5.56941132    1.44446232
+ H                 -7.22526678   -5.56941132    1.44446232
+
+ 1 2 1.0 3 1.0
+ 2
+ 3 4 1.0
+ 4
+
