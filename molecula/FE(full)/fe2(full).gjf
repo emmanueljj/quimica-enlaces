@@ -1,0 +1,11 @@
+%chk=C:\Users\emman\Escritorio\quimica-enlaces\molecula\fe2(full).chk
+# opt=modredundant b3lyp/lanl2dz
+
+Title Card Required
+
+0 1
+ Fe                -0.99837129   -1.12377848    0.00000000
+ Fe                -1.99837129   -1.12377848    0.00000000
+
+B 2 1 S 25 0.200000
+

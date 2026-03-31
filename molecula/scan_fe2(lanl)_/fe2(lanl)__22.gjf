@@ -1,0 +1,13 @@
+%chk=C:\Users\emman\Escritorio\quimica-enlaces\molecula\fe2(lanl).chk
+# b3lyp/lanl2dz geom=connectivity
+
+Title Card Required - Distancia 5.400A - Paso 22
+
+0 1
+ Fe     3.90390870     1.84039085     0.00000000
+ Fe    -1.49609130     1.84039085     0.00000000
+
+ 1
+ 2
+
+

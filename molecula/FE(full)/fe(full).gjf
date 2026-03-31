@@ -1,0 +1,10 @@
+%chk=C:\Users\emman\Escritorio\quimica-enlaces\molecula\fe(full).chk
+# b3lyp/lanl2dz geom=connectivity
+
+Title Card Required
+
+0 1
+ Fe                -0.97719867   -1.15635177    0.00000000
+
+ 1
+

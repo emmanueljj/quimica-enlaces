@@ -1,0 +1,13 @@
+%chk=C:\Users\emman\Escritorio\quimica-enlaces\molecula\Fe(dft).chk
+# b3lyp/3-21g geom=connectivity
+
+Title Card Required - Distancia 2.000A - Paso 5
+
+0 1
+ Fe     0.28388757     1.05956719     0.00000000
+ Fe    -1.69856823     0.79523975     0.00000000
+
+ 1
+ 2
+
+
