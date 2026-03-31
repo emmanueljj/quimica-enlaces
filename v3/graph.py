@@ -4,6 +4,8 @@ import math
 import tkinter as tk
 from tkinter import filedialog, messagebox
 from tkinter import ttk
+import numpy as np
+from scipy.optimize import curve_fit
 
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
@@ -70,12 +72,12 @@ class AppGraficador:
         self.archivos_sis = []
         self.archivos_m1 = []
         self.archivos_m2 = []
-        self.datos_grafica = [] # Guardará los puntos procesados
+        self.datos_grafica = [] 
         
         self.var_sis = tk.StringVar(value="0 archivos seleccionados")
         self.var_m1 = tk.StringVar(value="0 archivos seleccionados")
         self.var_m2 = tk.StringVar(value="0 archivos seleccionados")
-        self.var_mostrar_lj = tk.BooleanVar(value=True) # Checkbox para LJ
+        self.var_mostrar_lj = tk.BooleanVar(value=True) 
         
         self.crear_interfaz()
 
@@ -160,7 +162,6 @@ class AppGraficador:
         )
         if ruta:
             try:
-                # dpi=300 asegura calidad de publicación científica
                 self.fig.savefig(ruta, dpi=300, bbox_inches='tight')
                 messagebox.showinfo("Guardado", f"Gráfica guardada exitosamente en:\n{ruta}")
             except Exception as e:
@@ -218,30 +219,34 @@ class AppGraficador:
             # 1. Trazar datos DFT (Gaussian)
             self.ax.plot(distancias, energias, marker='o', linestyle='-', color='#D32F2F', linewidth=2, markersize=6, label="DFT (Gaussian)")
             
-            # 2. Trazar Lennard-Jones si está activo
+            # 2. Trazar Lennard-Jones si está activo (Ajuste por Mínimos Cuadrados Robusto)
             if self.var_mostrar_lj.get():
-                e_min = min(energias)
-                if e_min < 0: # Solo tiene sentido si hay un pozo atractivo
-                    idx_min = energias.index(e_min)
-                    r_m = distancias[idx_min] # Distancia de equilibrio
+                try:
+                    # Definimos la función LJ con desplazamiento vertical (C)
+                    def lennard_jones_desplazado(r, A, B, C):
+                        return (A / r**12) - (B / r**6) + C
                     
-                    # Generar puntos teóricos para la curva suave
-                    r_smooth = []
-                    e_lj = []
+                    r_data = np.array(distancias)
+                    e_data = np.array(energias)
                     
-                    # Empezar un poco antes del mínimo (para ver la pared repulsiva, pero no ir a infinito)
-                    r_start = r_m * 0.85 
-                    r_end = max(distancias) * 1.05
-                    paso = (r_end - r_start) / 150.0
+                    # Limites: A y B deben ser positivos (0 a infinito), C puede ser cualquier valor
+                    limites_inferiores = [0, 0, -np.inf]
+                    limites_superiores = [np.inf, np.inf, np.inf]
                     
-                    for i in range(150):
-                        r = r_start + i * paso
-                        r_smooth.append(r)
-                        # Fórmula E_LJ basada en profundidad de pozo (e_min) y distancia de equilibrio (r_m)
-                        e = e_min * ((r_m/r)**12 - 2*(r_m/r)**6)
-                        e_lj.append(e)
-                        
-                    self.ax.plot(r_smooth, e_lj, linestyle='--', color='#1976D2', linewidth=2, label="Modelo Lennard-Jones")
+                    popt, _ = curve_fit(lennard_jones_desplazado, r_data, e_data, maxfev=100000, bounds=(limites_inferiores, limites_superiores))
+                    A_opt, B_opt, C_opt = popt
+                    
+                    print(f"--- Parámetros LJ Encontrados ---")
+                    print(f"A: {A_opt:.4e}")
+                    print(f"B: {B_opt:.4e}")
+                    print(f"C (Desplazamiento): {C_opt:.4f} kcal/mol")
+                    
+                    r_smooth = np.linspace(min(distancias) * 0.95, max(distancias) * 1.05, 200)
+                    e_lj = lennard_jones_desplazado(r_smooth, A_opt, B_opt, C_opt)
+                    
+                    self.ax.plot(r_smooth, e_lj, linestyle='--', color='#1976D2', linewidth=2, label="Ajuste Teórico LJ")
+                except Exception as e:
+                    print(f"No se pudo realizar el ajuste de Lennard-Jones: {e}")
 
             # Decoración final
             self.ax.set_title("Curva de Energía de Interacción Molecular", fontsize=14, fontweight='bold', pad=10)

@@ -1,4 +1,4 @@
- Entering Link 1 = C:\G09W\l1.exe PID=      2564.
+ Entering Link 1 = C:\G09W\l1.exe PID=      8312.
   
  Copyright (c) 1988,1990,1992,1993,1995,1998,2003,2009,2013,
             Gaussian, Inc.  All Rights Reserved.
@@ -71,9 +71,9 @@
  
  ******************************************
  Gaussian 09:  IA32W-G09RevD.01 24-Apr-2013
-                29-Mar-2026 
+                30-Mar-2026 
  ******************************************
- %chk=C:\Users\emman\Escritorio\quimica-enlaces\molecula\2H20.chk
+ %chk=C:\Users\emman\Escritorio\quimica-enlaces\molecula\2H.chk
  -------------
  # b3lyp/3-21g
  -------------
@@ -84,75 +84,65 @@
  5/5=2,38=5/2;
  6/7=2,8=2,9=2,10=2,28=1/1;
  99/5=1,9=1/99;
- -------------------
- Title Card Required
- -------------------
+ ------------------------------------------------
+ Title Card Required - Distancia 4.400A - Paso 17
+ ------------------------------------------------
  Symbolic Z-matrix:
  Charge =  0 Multiplicity = 1
- O                    -1.85392   0.51407   0. 
- H                    -0.89392   0.51407   0. 
- H                    -2.17437   1.41901   0. 
- O                    -1.20797   1.27746   0. 
- H                    -0.24797   1.27746   0. 
- H                    -1.52843   2.18239   0. 
+ H                    -1.01548   1.91175   0. 
+ H                     3.33444   2.57369   0. 
  
                           Input orientation:                          
  ---------------------------------------------------------------------
  Center     Atomic      Atomic             Coordinates (Angstroms)
  Number     Number       Type             X           Y           Z
  ---------------------------------------------------------------------
-      1          8           0       -1.853916    0.514072    0.000000
-      2          1           0       -0.893916    0.514072    0.000000
-      3          1           0       -2.174370    1.419008    0.000000
-      4          8           0       -1.207973    1.277459    0.000000
-      5          1           0       -0.247973    1.277459    0.000000
-      6          1           0       -1.528428    2.182394    0.000000
+      1          1           0       -1.015482    1.911750    0.000000
+      2          1           0        3.334441    2.573694    0.000000
  ---------------------------------------------------------------------
-                    Distance matrix (angstroms):
-                    1          2          3          4          5
-     1  O    0.000000
-     2  H    0.960000   0.000000
-     3  H    0.960000   1.567952   0.000000
-     4  O    1.000000   0.825464   0.976708   0.000000
-     5  H    1.778148   1.000000   1.931590   0.960000   0.000000
-     6  H    1.699777   1.784910   1.000000   0.960000   1.567952
-                    6
-     6  H    0.000000
- Stoichiometry    H4O2
- Framework group  CS[SG(H4O2)]
- Deg. of freedom     9
- Full point group                 CS      NOp   2
- Largest Abelian subgroup         CS      NOp   2
- Largest concise Abelian subgroup C1      NOp   1
+ Stoichiometry    H2
+ Framework group  D*H[C*(H.H)]
+ Deg. of freedom     1
+ Full point group                 D*H     NOp   8
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C2      NOp   2
                          Standard orientation:                         
  ---------------------------------------------------------------------
  Center     Atomic      Atomic             Coordinates (Angstroms)
  Number     Number       Type             X           Y           Z
  ---------------------------------------------------------------------
-      1          8           0        0.009632   -0.610393    0.000000
-      2          1           0        0.742482    0.009712    0.000000
-      3          1           0       -0.819535   -0.126572    0.000000
-      4          8           0        0.009632    0.389608    0.000000
-      5          1           0        0.742482    1.009712    0.000000
-      6          1           0       -0.819535    0.873428    0.000000
+      1          1           0        0.000000    0.000000    2.200000
+      2          1           0        0.000000    0.000000   -2.200000
  ---------------------------------------------------------------------
- Rotational constants (GHZ):    204.9860065     49.9554290     40.1667303
+ Rotational constants (GHZ):      0.0000000     51.8032129     51.8032129
  Standard basis: 3-21G (6D, 7F)
- There are    22 symmetry adapted cartesian basis functions of A'  symmetry.
- There are     4 symmetry adapted cartesian basis functions of A"  symmetry.
- There are    22 symmetry adapted basis functions of A'  symmetry.
- There are     4 symmetry adapted basis functions of A"  symmetry.
-    26 basis functions,    42 primitive gaussians,    26 cartesian basis functions
-    10 alpha electrons       10 beta electrons
-       nuclear repulsion energy        68.1446377355 Hartrees.
- NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ There are     2 symmetry adapted cartesian basis functions of AG  symmetry.
+ There are     0 symmetry adapted cartesian basis functions of B1G symmetry.
+ There are     0 symmetry adapted cartesian basis functions of B2G symmetry.
+ There are     0 symmetry adapted cartesian basis functions of B3G symmetry.
+ There are     0 symmetry adapted cartesian basis functions of AU  symmetry.
+ There are     2 symmetry adapted cartesian basis functions of B1U symmetry.
+ There are     0 symmetry adapted cartesian basis functions of B2U symmetry.
+ There are     0 symmetry adapted cartesian basis functions of B3U symmetry.
+ There are     2 symmetry adapted basis functions of AG  symmetry.
+ There are     0 symmetry adapted basis functions of B1G symmetry.
+ There are     0 symmetry adapted basis functions of B2G symmetry.
+ There are     0 symmetry adapted basis functions of B3G symmetry.
+ There are     0 symmetry adapted basis functions of AU  symmetry.
+ There are     2 symmetry adapted basis functions of B1U symmetry.
+ There are     0 symmetry adapted basis functions of B2U symmetry.
+ There are     0 symmetry adapted basis functions of B3U symmetry.
+     4 basis functions,     6 primitive gaussians,     4 cartesian basis functions
+     1 alpha electrons        1 beta electrons
+       nuclear repulsion energy         0.1202675475 Hartrees.
+ NAtoms=    2 NActive=    2 NUniq=    1 SFac= 4.00D+00 NAtFMM=   60 NAOKFM=F Big=F
  Integral buffers will be    262144 words long.
  Raffenetti 2 integral format.
  Two-electron integral symmetry is turned on.
  One-electron integrals computed using PRISM.
- NBasis=    26 RedAO= T EigKep=  2.86D-02  NBF=    22     4
- NBsUse=    26 1.00D-06 EigRej= -1.00D+00 NBFU=    22     4
- ExpMin= 1.83D-01 ExpMax= 3.22D+02 ExpMxC= 3.22D+02 IAcc=1 IRadAn=         1 AccDes= 0.00D+00
+ NBasis=     4 RedAO= T EigKep=  5.00D-01  NBF=     2     0     0     0     0     2     0     0
+ NBsUse=     4 1.00D-06 EigRej= -1.00D+00 NBFU=     2     0     0     0     0     2     0     0
+ ExpMin= 1.83D-01 ExpMax= 5.45D+00 ExpMxC= 5.45D+00 IAcc=1 IRadAn=         1 AccDes= 0.00D+00
  Harris functional with IExCor=  402 and IRadAn=       1 diagonalized for initial guess.
  HarFok:  IExCor=  402 AccDes= 0.00D+00 IRadAn=         1 IDoV= 1 UseB2=F ITyADJ=14
  ICtDFT=  3500011 ScaDFX=  1.000000  1.000000  1.000000  1.000000
@@ -162,19 +152,18 @@
          NMat0=    1 NMatS0=      1 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
  Petite list used in FoFCou.
  Initial guess orbital symmetries:
-       Occupied  (A') (A') (A') (A') (A') (A") (A') (A') (A") (A')
-       Virtual   (A') (A') (A') (A') (A') (A') (A') (A') (A") (A")
-                 (A') (A') (A') (A') (A') (A')
- The electronic state of the initial guess is 1-A'.
- Keep R1 ints in memory in symmetry-blocked form, NReq=939158.
+       Occupied  (SGG)
+       Virtual   (SGU) (SGG) (SGU)
+ The electronic state of the initial guess is 1-SGG.
+ Keep R1 ints in memory in symmetry-blocked form, NReq=851696.
  Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
  Requested convergence on MAX density matrix=1.00D-06.
  Requested convergence on             energy=1.00D-06.
  No special actions if energy rises.
  Integral accuracy reduced to 1.0D-05 until final iterations.
  Initial convergence to 1.0D-05 achieved.  Increase integral accuracy.
- SCF Done:  E(RB3LYP) =  -150.517605552     A.U. after   16 cycles
-            NFock= 16  Conv=0.55D-08     -V/T= 1.9684
+ SCF Done:  E(RB3LYP) = -0.891957991531     A.U. after    6 cycles
+            NFock=  6  Conv=0.54D-12     -V/T= 1.9459
 
  **********************************************************************
 
@@ -183,56 +172,60 @@
  **********************************************************************
 
  Orbital symmetries:
-       Occupied  (A') (A') (A') (A') (A') (A") (A') (A') (A") (A')
-       Virtual   (A') (A') (A') (A') (A') (A') (A') (A') (A") (A")
-                 (A') (A') (A') (A') (A') (A')
- The electronic state is 1-A'.
- Alpha  occ. eigenvalues --  -19.25283 -19.11210  -1.79620  -1.08967  -0.98663
- Alpha  occ. eigenvalues --   -0.72410  -0.59789  -0.41879  -0.22492  -0.08902
- Alpha virt. eigenvalues --    0.01535   0.10589   0.25788   0.49173   0.68728
- Alpha virt. eigenvalues --    0.83728   0.94166   1.13857   1.19580   1.40752
- Alpha virt. eigenvalues --    1.45151   1.54027   1.61857   2.16809   2.72944
- Alpha virt. eigenvalues --    2.92110
+       Occupied  (SGG)
+       Virtual   (SGU) (SGG) (SGU)
+ The electronic state is 1-SGG.
+ Alpha  occ. eigenvalues --   -0.23385
+ Alpha virt. eigenvalues --   -0.20817   0.88835   0.89553
           Condensed to atoms (all electrons):
-               1          2          3          4          5          6
-     1  O    9.667223  -0.301403  -0.295318  -0.476564  -0.153455  -0.233330
-     2  H   -0.301403   1.268709   0.320204  -0.829978   0.265006   0.232236
-     3  H   -0.295318   0.320204   1.169810  -0.761309   0.132518   0.406310
-     4  O   -0.476564  -0.829978  -0.761309  10.944485  -0.210085  -0.463903
-     5  H   -0.153455   0.265006   0.132518  -0.210085   0.608448   0.082809
-     6  H   -0.233330   0.232236   0.406310  -0.463903   0.082809   0.913849
+               1          2
+     1  H    0.998983   0.001017
+     2  H    0.001017   0.998983
  Mulliken charges:
                1
-     1  O   -0.207153
-     2  H    0.045226
-     3  H    0.027785
-     4  O   -0.202645
-     5  H    0.274758
-     6  H    0.062029
+     1  H    0.000000
+     2  H    0.000000
  Sum of Mulliken charges =   0.00000
  Mulliken charges with hydrogens summed into heavy atoms:
                1
-     1  O   -0.179367
-     4  O    0.179367
- Electronic spatial extent (au):  <R**2>=             62.7835
+ Electronic spatial extent (au):  <R**2>=             40.2727
  Charge=              0.0000 electrons
  Dipole moment (field-independent basis, Debye):
-    X=              1.2652    Y=              1.9756    Z=              0.0000  Tot=              2.3460
+    X=              0.0000    Y=              0.0000    Z=              0.0000  Tot=              0.0000
  Quadrupole moment (field-independent basis, Debye-Ang):
-   XX=            -15.6981   YY=            -13.9047   ZZ=            -14.3002
-   XY=              1.1301   XZ=              0.0000   YZ=              0.0000
+   XX=             -2.5734   YY=             -2.5734   ZZ=             -2.5263
+   XY=              0.0000   XZ=              0.0000   YZ=              0.0000
  Traceless Quadrupole moment (field-independent basis, Debye-Ang):
-   XX=             -1.0637   YY=              0.7296   ZZ=              0.3341
-   XY=              1.1301   XZ=              0.0000   YZ=              0.0000
+   XX=             -0.0157   YY=             -0.0157   ZZ=              0.0314
+   XY=              0.0000   XZ=              0.0000   YZ=              0.0000
  Octapole moment (field-independent basis, Debye-Ang**2):
-  XXX=              2.9885  YYY=              0.4982  ZZZ=              0.0000  XYY=              1.3533
-  XXY=             -0.6932  XXZ=              0.0000  XZZ=              0.5625  YZZ=             -0.4621
+  XXX=              0.0000  YYY=              0.0000  ZZZ=              0.0000  XYY=              0.0000
+  XXY=              0.0000  XXZ=              0.0000  XZZ=              0.0000  YZZ=              0.0000
   YYZ=              0.0000  XYZ=              0.0000
  Hexadecapole moment (field-independent basis, Debye-Ang**3):
- XXXX=            -34.5600 YYYY=            -33.1232 ZZZZ=            -10.9229 XXXY=              1.3225
- XXXZ=              0.0000 YYYX=              1.6286 YYYZ=              0.0000 ZZZX=              0.0000
- ZZZY=              0.0000 XXYY=            -10.8666 XXZZ=             -7.1037 YYZZ=             -8.1817
- XXYZ=              0.0000 YYXZ=              0.0000 ZZXY=              0.2174
- N-N= 6.814463773553D+01 E-N=-4.930523265464D+02  KE= 1.554287897644D+02
- Symmetry A'   KE= 1.446378470600D+02
- Symmetry A"   KE= 1.079094270439D+01
+ XXXX=             -2.5783 YYYY=             -2.5783 ZZZZ=            -76.9747 XXXY=              0.0000
+ XXXZ=              0.0000 YYYX=              0.0000 YYYZ=              0.0000 ZZZX=              0.0000
+ ZZZY=              0.0000 XXYY=             -0.8594 XXZZ=            -13.2969 YYZZ=            -13.2969
+ XXYZ=              0.0000 YYXZ=              0.0000 ZZXY=              0.0000
+ N-N= 1.202675474683D-01 E-N=-2.175126899222D+00  KE= 9.429842234551D-01
+ Symmetry AG   KE= 9.429842234551D-01
+ Symmetry B1G  KE= 0.000000000000D+00
+ Symmetry B2G  KE= 0.000000000000D+00
+ Symmetry B3G  KE= 0.000000000000D+00
+ Symmetry AU   KE= 0.000000000000D+00
+ Symmetry B1U  KE= 0.000000000000D+00
+ Symmetry B2U  KE= 0.000000000000D+00
+ Symmetry B3U  KE= 0.000000000000D+00
+ 1|1|UNPC-INANI_LAP|SP|RB3LYP|3-21G|H2|EMMAN|30-Mar-2026|0||# b3lyp/3-2
+ 1g||Title Card Required - Distancia 4.400A - Paso 17||0,1|H,0,-1.01548
+ 204,1.91174965,0.|H,0,3.33444084,2.57369445,0.||Version=IA32W-G09RevD.
+ 01|State=1-SGG|HF=-0.891958|RMSD=5.431e-013|Dipole=0.,0.,0.|Quadrupole
+ =0.0225491,-0.0108784,-0.0116708,0.0052074,0.,0.|PG=D*H [C*(H1.H1)]||@
+
+
+ THE PROGRESS OF RIVERS TO THE SEA IS NOT AS RAPID
+ AS THAT OF MAN TO ERROR.
+                                              -- VOLTAIRE
+ Job cpu time:       0 days  0 hours  0 minutes  1.0 seconds.
+ File lengths (MBytes):  RWF=      5 Int=      0 D2E=      0 Chk=      1 Scr=      1
+ Normal termination of Gaussian 09 at Mon Mar 30 18:06:47 2026.

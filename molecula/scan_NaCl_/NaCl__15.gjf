@@ -1,0 +1,13 @@
+%chk=C:\Users\emman\Escritorio\quimica-enlaces\molecula\NaCl.chk
+# hf/3-21g geom=connectivity
+
+Title Card Required - Distancia 4.000A - Paso 15
+
+0 1
+ Na     2.99180411     1.63591009     0.00000000
+ Cl    -1.00777588     1.57794513     0.00000000
+
+ 1 2 1.0
+ 2
+
+
